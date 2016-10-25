@@ -45,17 +45,24 @@ public class MainActivity extends AppCompatActivity {
                 TextView label = (TextView) findViewById(R.id.lblText);
                 EditText txtField = (EditText) findViewById(R.id.txtField);
 
-                int val = Integer.parseInt(txtField.getText().toString());
+                int val;
+                try {
+                    val = Integer.parseInt(txtField.getText().toString());
+                }
+                catch (NumberFormatException e){
+                    label.setText(txtField.getText().toString());
+                    return;
+                }
 
                 String output = "";
 
                 if (val % 3 == 0) {
                     output += "fizz";
                 }
-                else if (val % 5 == 0) {
+                if (val % 5 == 0) {
                     output += "buzz";
                 }
-                else {
+                if (output.isEmpty()) {
                     output = Integer.toString(val);
                 }
 
