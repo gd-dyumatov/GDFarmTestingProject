@@ -23,8 +23,8 @@ public class FizzTest {
     private WebElement lbl;
     private WebElement txt;
 
-    private final String sauceUserName = "griddy1";
-    private final String sauceAccessKey = "872efa88-13ac-4d56-9983-8eb44e5057ed";
+    private final String sauceUserName = "rjgumby";
+    private final String sauceAccessKey = "0dee5fe6-577e-46ce-8637-c1f97d4682b2";
 
     @Before
     public void setUp() throws Exception {
