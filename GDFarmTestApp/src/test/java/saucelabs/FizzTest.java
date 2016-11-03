@@ -35,7 +35,7 @@ public class FizzTest {
         capabilities.setCapability("deviceName","Android Emulator");
         capabilities.setCapability("platformVersion", "4.4");
 //        capabilities.setCapability("app", app.getAbsolutePath());
-        capabilities.setCapability("app", "https://github.com/lysenkoivan/GDFarmTestingProject/blob/build_files/GDFarmTestApp-debug.apk");
+        capabilities.setCapability("app", "https://github.com/gd-dyumatov/GDFarmTestingProject/raw/DY-saucelabfarmtest/GDFarmTestApp-debug-1.apk");
         capabilities.setCapability("app-package", "com.griddynamics.khqacop.gdfarmtestingproject");
 //        capabilities.setCapability("appActivity", "MainActivity");
 //        capabilities.setCapability("appiumVersion", "1.3.4");
